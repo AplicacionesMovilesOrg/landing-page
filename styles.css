@@ -31,17 +31,17 @@
 }
 
 .video__wrapper {
-    position: relative;
     max-width: 900px;
     margin: 0 auto;
 }
 
-.video__wrapper iframe {
+.video__wrapper video {
     width: 100%;
-    height: 450px;
+    height: auto;
     border-radius: 16px;
     box-shadow: 0px 8px 20px rgba(0,0,0,0.15);
 }
+
 
 .btn{
     justify-content: flex-start;
