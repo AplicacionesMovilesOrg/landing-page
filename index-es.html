@@ -35,9 +35,11 @@
     <ul class="nav__links" id="nav-links">
         <li><a href="#home">Inicio</a></li>
         <li><a href="#about-us">Sobre Nosotros</a></li>
-        <li><a href="#package">Planes</a></li>
-
-        <li><a href="#contact">Contactanos</a></li>
+        <li><a href="#team">Equipo</a></li>
+        <li><a href="#tools">Características</a></li>
+        <li><a href="#testimonials">Opiniones</a></li>
+        <li><a href="#package">Precios</a></li>
+        <li><a href="#contact">Contacto</a></li>
     </ul>
     <div class="nav__btns">
         <button class="btn language" onclick="window.location.href='index.html'">EN</button>
@@ -55,6 +57,7 @@
         <p class="section__description">Aplicación móvil que simplifica la gestión de infraestructuras educativas para escuelas e instituciones.</p>
         <div class="header__btns">
             <button class="btn" onclick="window.location.href='#download'">Descargar App Admin</button>
+            <button class="btn" onclick="window.location.href='#download'">Descargar App Docentes</button>
         </div>
     </div>
 </div>
@@ -185,7 +188,7 @@
 
 
 <!--=============== ABOUT 2 ===============-->
-<section class="section__container experience__container">
+<section class="section__container experience__container" id="tools">
     <h2 class="section__header">Herramientas</h2>
     <div class="experience__content">
         <div class="experience__card card-1">
@@ -203,7 +206,7 @@
 
 <!----------------------->
 
-<div class="dashboard-admin">
+<div class="dashboard-admin" id="admin-app">
     <h1 class="dashboard-subtitle">APP MÓVIL ADMIN</h1>
     <p class="dashboard-description">
         La App Móvil Admin proporciona una vista completa de todas las operaciones dentro de la institución—directamente desde tu dispositivo Android. Los administradores pueden gestionar aulas, instalaciones deportivas y equipos, rastrear la disponibilidad y ocupación de las salas, y monitorear los movimientos de los estudiantes en tiempo real. ¡Disponible ahora para descargar!
@@ -215,15 +218,18 @@
 </div>
 
 <!-------APP MÓVIL DOCENTES-------->
-<div class="dashboard-education">
-    <h1 class="dashboard-subtitle">APP MÓVIL DOCENTES <span style="color: #ff6b6b;">(Próximamente)</span></h1>
+<div class="dashboard-education" id="teacher-app">
+    <h1 class="dashboard-subtitle">APP MÓVIL DOCENTES</h1>
     <p class="dashboard-description">
-        Diseñada para docentes y personal, la App Móvil Docentes agiliza las operaciones diarias al ofrecer herramientas para gestionar horarios, reservar aulas o espacios compartidos, y rastrear el estado de los equipos. Los usuarios reciben notificaciones instantáneas sobre cambios en las asignaciones de aulas, actualizaciones de mantenimiento u otros eventos relevantes. ¡Actualmente en desarrollo!
+        Diseñada para docentes y personal, la App Móvil Docentes agiliza las operaciones diarias al ofrecer herramientas para gestionar horarios, reservar aulas o espacios compartidos, y rastrear el estado de los equipos. Los usuarios reciben notificaciones instantáneas sobre cambios en las asignaciones de aulas, actualizaciones de mantenimiento u otros eventos relevantes. ¡Disponible ahora para descargar!
     </p>
-    <img src="assets/d-edu.jpg" class="mi-imagen" alt="App Móvil Docentes Vista Previa">
+    <div class="mobile-screenshots">
+        <img src="assets/home-teacher.jpg" class="mobile-screenshot" alt="App Móvil Docentes Inicio">
+        <img src="assets/menu-teacher.jpg" class="mobile-screenshot" alt="App Móvil Docentes Menú">
+    </div>
 </div>
 
-<section class="section__container client__container">
+<section class="section__container client__container" id="testimonials">
     <h2 class="section__header">Lo que dicen nuestros clientes</h2>
     <!-- Slider main container -->
     <div class="swiper">
@@ -286,6 +292,12 @@
                             <span><i class="ri-star-fill"></i></span>
                             <span><i class="ri-star-fill"></i></span>
                         </div>
+                        <p>
+                            ¡Tener ambas aplicaciones disponibles ahora es increíble!
+                            La integración perfecta entre las funcionalidades de Admin
+                            y Docentes ha mejorado tremendamente nuestra coordinación
+                            institucional.
+                        </p>
                     </div>
                     <div class="client__details">
                         <img src="assets/client-3.jpg" alt="client" />
@@ -457,18 +469,18 @@
 
 <!--=============== DESCARGAR APP ===============-->
 <section class="section__container" id="download" style="text-align: center; padding: 60px 20px;">
-    <h2 class="section__header">Descarga EduSpace App Admin</h2>
+    <h2 class="section__header">Descarga EduSpace Apps</h2>
     <p class="section__description" style="max-width: 600px; margin: 20px auto;">
-        Comienza con EduSpace Admin para Android. Descarga el archivo APK e instálalo en tu dispositivo Android para gestionar tu institución educativa sobre la marcha.
+        Comienza con EduSpace para Android. Descarga los archivos APK e instálalos en tu dispositivo Android para gestionar tu institución educativa sobre la marcha.
     </p>
-    <div style="margin-top: 30px;">
+    <div style="margin-top: 30px; display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
         <a href="https://github.com/AplicacionesMovilesOrg/Eduspace-android-native-app/releases/download/v2.0/app.apk" class="btn" style="padding: 15px 40px; font-size: 18px; text-decoration: none; display: inline-block;">
             <i class="ri-download-line"></i> Descargar App Admin (APK)
         </a>
+        <a href="https://github.com/AplicacionesMovilesOrg/eduspace-flutter-app/releases/download/v1.0.0/app-release.apk" class="btn" style="padding: 15px 40px; font-size: 18px; text-decoration: none; display: inline-block;">
+            <i class="ri-download-line"></i> Descargar App Docentes (APK)
+        </a>
     </div>
-    <p style="margin-top: 20px; color: #666; font-size: 14px;">
-        <strong>Nota:</strong> ¡La App Docentes estará disponible pronto! Mantente atento a las actualizaciones.
-    </p>
 </section>
 <!----------------------->
 
@@ -538,6 +550,11 @@
         </div>
     </footer>
 </footer>
+
+<!-- Scroll to Top Button -->
+<button id="scrollToTop" class="scroll-to-top">
+    <i class="ri-arrow-up-line"></i>
+</button>
 
 <script src="https://unpkg.com/scrollreveal"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

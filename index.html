@@ -35,7 +35,10 @@
     <ul class="nav__links" id="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about-us">About us</a></li>
-        <li><a href="#package">Package</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#tools">Features</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#package">Pricing</a></li>
         <li><a href="#contact">Contact</a></li>
     </ul>
     <div class="nav__btns">
@@ -56,6 +59,7 @@
         </p>
         <div class="header__btns">
             <button class="btn" onclick="window.location.href='#download'">Download Admin App</button>
+            <button class="btn" onclick="window.location.href='#download'">Download Teacher App</button>
         </div>
     </div>
 </div>
@@ -180,7 +184,7 @@
 <!----------------------->
 
 <!--=============== TOOLS ===============-->
-<section class="section__container experience__container">
+<section class="section__container experience__container" id="tools">
     <h2 class="section__header">Tools</h2>
     <div class="experience__content">
         <div class="experience__card card-1">
@@ -198,7 +202,7 @@
 <!----------------------->
 
 <!--=============== ADMIN MOBILE APP ===============-->
-<div class="dashboard-admin">
+<div class="dashboard-admin" id="admin-app">
     <h1 class="dashboard-subtitle">ADMIN MOBILE APP</h1>
     <p class="dashboard-description">
         The Admin Mobile App provides a comprehensive view of all operations within the institution—directly from your Android device.
@@ -213,17 +217,20 @@
 <!----------------------->
 
 <!------- TEACHER MOBILE APP -------->
-<div class="dashboard-education">
-    <h1 class="dashboard-subtitle">TEACHER MOBILE APP <span style="color: #ff6b6b;">(Coming Soon)</span></h1>
+<div class="dashboard-education" id="teacher-app">
+    <h1 class="dashboard-subtitle">TEACHER MOBILE APP</h1>
     <p class="dashboard-description">
-        Designed for teachers and staff, the Teacher Mobile App streamlines day-to-day operations by offering tools to manage schedules, reserve classrooms or shared spaces, and track the condition of equipment. Users receive instant notifications about changes in classroom assignments, maintenance updates, or other relevant events. Currently in development!
+        Designed for teachers and staff, the Teacher Mobile App streamlines day-to-day operations by offering tools to manage schedules, reserve classrooms or shared spaces, and track the condition of equipment. Users receive instant notifications about changes in classroom assignments, maintenance updates, or other relevant events. Available now for download!
     </p>
-    <img src="assets/d-edu.jpg" class="mi-imagen" alt="Teacher Mobile App Preview">
+    <div class="mobile-screenshots">
+        <img src="assets/home-teacher.jpg" class="mobile-screenshot" alt="Teacher Mobile App Home">
+        <img src="assets/menu-teacher.jpg" class="mobile-screenshot" alt="Teacher Mobile App Menu">
+    </div>
 </div>
 <!----------------------->
 
 <!----- TESTIMONIALS ------>
-<section class="section__container client__container">
+<section class="section__container client__container" id="testimonials">
     <h2 class="section__header">What our customers saying</h2>
     <!-- Slider main container -->
     <div class="swiper">
@@ -293,6 +300,12 @@
                             <span><i class="ri-star-fill"></i></span>
                             <span><i class="ri-star-fill"></i></span>
                         </div>
+                        <p>
+                            Having both apps available now is incredible!
+                            The seamless integration between Admin and Teacher
+                            functionalities has improved our institutional
+                            coordination tremendously.
+                        </p>
                     </div>
                     <div class="client__details">
                         <img src="assets/client-3.jpg" alt="client" />
@@ -462,18 +475,18 @@
 
 <!--=============== DOWNLOAD APP ===============-->
 <section class="section__container" id="download" style="text-align: center; padding: 60px 20px;">
-    <h2 class="section__header">Download EduSpace Admin App</h2>
+    <h2 class="section__header">Download EduSpace Apps</h2>
     <p class="section__description" style="max-width: 600px; margin: 20px auto;">
-        Get started with EduSpace Admin for Android. Download the APK file and install it on your Android device to manage your educational institution on the go.
+        Get started with EduSpace for Android. Download the APK files and install them on your Android device to manage your educational institution on the go.
     </p>
-    <div style="margin-top: 30px;">
+    <div style="margin-top: 30px; display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
         <a href="https://github.com/AplicacionesMovilesOrg/Eduspace-android-native-app/releases/download/v2.0/app.apk" class="btn" style="padding: 15px 40px; font-size: 18px; text-decoration: none; display: inline-block;">
             <i class="ri-download-line"></i> Download Admin App (APK)
         </a>
+        <a href="https://github.com/AplicacionesMovilesOrg/eduspace-flutter-app/releases/download/v1.0.0/app-release.apk" class="btn" style="padding: 15px 40px; font-size: 18px; text-decoration: none; display: inline-block;">
+            <i class="ri-download-line"></i> Download Teacher App (APK)
+        </a>
     </div>
-    <p style="margin-top: 20px; color: #666; font-size: 14px;">
-        <strong>Note:</strong> Teacher App is coming soon! Stay tuned for updates.
-    </p>
 </section>
 <!----------------------->
 
@@ -542,6 +555,11 @@
         </div>
     </footer>
 </footer>
+
+<!-- Scroll to Top Button -->
+<button id="scrollToTop" class="scroll-to-top">
+    <i class="ri-arrow-up-line"></i>
+</button>
 
 <script src="https://unpkg.com/scrollreveal"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
